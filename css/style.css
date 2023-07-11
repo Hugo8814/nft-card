@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Outfit"; }
+  @media only screen and (max-width: 500px) {
+    html {
+      font-size: 52.5%; } }
+  @media only screen and (max-width: 450px) {
+    html {
+      font-size: 42.5%; } }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0d192b;
+  height: 100vh;
+  width: 100%;
+  padding: 4rem; }
+  .container .card {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    font-size: 2rem;
+    background-color: #14253d;
+    width: 45rem;
+    height: min-content;
+    padding: 3rem;
+    border-radius: 2rem;
+    gap: 2rem; }
+    .container .card__img {
+      width: 100%;
+      height: 90%;
+      border-radius: 1.5rem;
+      object-fit: contain;
+      margin-bottom: 2rem; }
+    .container .card__h1 {
+      color: #fff;
+      font-weight: 600;
+      font-size: 2.5rem; }
+    .container .card__text {
+      color: #8bacda; }
+      .container .card__text-2 {
+        padding: 1.5rem 0rem;
+        display: flex;
+        gap: 16rem;
+        justify-content: space-between;
+        border-bottom: 2px solid rgba(139, 172, 218, 0.2); }
+        @media only screen and (max-width: 500px) {
+          .container .card__text-2 {
+            gap: 14rem; } }
+      .container .card__text-3 {
+        color: #00fff7;
+        font-weight: 500; }
+      .container .card__text-4 {
+        color: #8bacda;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center; }
+    .container .card__icon-1 {
+      margin-right: 5px; }
+    .container .card__icon-2 {
+      margin-right: 5px; }
+    .container .card__footer {
+      display: flex;
+      align-items: center;
+      height: 5rem; }
+      .container .card__footer-img {
+        height: 100%;
+        margin-right: 4rem;
+        padding: 2px;
+        background-color: #fff;
+        border-radius: 50%; }
+      .container .card__footer-text {
+        color: #8bacda; }
+        .container .card__footer-text-1 {
+          color: white; }
